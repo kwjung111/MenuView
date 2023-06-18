@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.restaurant {
+    text-align: center;
+    padding: 50px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.menu {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 50px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.menu-item {
+    font-size: 40px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+}
+.menu-item img {
+    width: 100%;
+    max-width: 100px; /* 이미지의 최대 크기를 조정하였습니다. */
+    height: auto;
+}
+.menu-item h2 {
+    margin: 0;
+}
+.menu-item p {
+    color: #888;
+    font-size: 30px;
+}
+.menu-item .price {
+    color: #e67e22;
+    font-size: 50px;
+    font-weight: bold;
+}
+@media (max-width: 100px) {
+    .menu-item img {
+        width: 100%;
+    }
+}
