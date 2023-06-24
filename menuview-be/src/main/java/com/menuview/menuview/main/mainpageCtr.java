@@ -1,5 +1,7 @@
 package com.menuview.menuview.main;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,6 +12,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping("/")
 public class mainpageCtr {
+
+    final static Logger logger = LogManager.getLogger(mainpageCtr.class);
 
     @Autowired
     mainpageSvc service;
@@ -23,6 +27,7 @@ public class mainpageCtr {
     @GetMapping("test")
     @ResponseBody
     public Object mainpageTest(){
+        logger.info("test api called");
         Object rtnObj = service.test01();
         return rtnObj;
     }

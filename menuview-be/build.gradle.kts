@@ -34,6 +34,8 @@ dependencies {
 	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.springframework.security:spring-security-test")
+	implementation("org.apache.logging.log4j:log4j-api")
+	implementation("org.apache.logging.log4j:log4j-core")
 }
 
 tasks.withType<Test> {
